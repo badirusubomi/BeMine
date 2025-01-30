@@ -1,0 +1,178 @@
+body {
+	background-color: black;
+	position: relative;
+}
+
+#hero {
+	background-color: rgb(36, 35, 35);
+}
+
+h2 {
+	font-size: 30px;
+}
+
+#hero h1,
+.typewrite,
+#cuteForehead,
+h2 {
+	color: rgba(228, 22, 255, 0.61);
+	font-family: "JetBrains Mono";
+	font-size: 1.5rem;
+	padding: 0 10%;
+}
+
+a {
+	text-decoration: none;
+}
+section > div {
+	height: 100dvh;
+	width: 100dvw;
+}
+
+.bg-color-2 {
+	background-color: antiquewhite;
+}
+
+.bg-color-1 {
+	background-color: #000000;
+}
+
+.bg-color-3 {
+	background-color: #000000;
+}
+
+:root {
+	--red: tomato;
+	--bgColor: bisque;
+}
+
+section {
+	height: 100dvh;
+	padding: 0;
+	position: relative;
+}
+
+#notes > div {
+	height: 100dvh;
+}
+
+img.framed {
+	box-shadow: -50px -50px 0 -40px var(--red), 50px 50px 0 -40px var(--red);
+}
+
+.img {
+	contain: fill;
+	width: 300px;
+}
+/**---------------------------------------*/
+/* #submissionForm {
+	list-style-type: none;
+	margin: 25px 0 0 0;
+	padding: 0;
+}
+
+#submissionForm li {
+	float: left;
+	margin: 0 5px 0 0;
+	width: 100px;
+	height: 40px;
+	position: relative;
+}
+#submissionForm label,
+#submissionForm input {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#submissionForm input[type="radio"] {
+	opacity: 0.01;
+	z-index: 100;
+}
+
+#submissionForm input[type="radio"]:checked + label,
+.Checked + label {
+	background: yellow;
+}
+
+#submissionForm label {
+	padding: 5px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	z-index: 90;
+}
+#submissionForm label:hover {
+	background: #ddd;
+} */
+
+/*--------------------------------------------------*/
+.submissionButton {
+	background-color: rgb(10, 80, 80);
+	color: white;
+	border: 0 solid;
+	border-radius: 1cap;
+	padding: 3%;
+}
+
+.blinking-arrow {
+	display: flex;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	right: 20px;
+	top: 70%;
+	justify-content: center;
+	align-items: center;
+	z-index: 4;
+	color: white;
+	bottom: 100px; /* This will keep it at the bottom */
+	animation: fading 2s infinite;
+}
+@keyframes fading {
+	0% {
+		opacity: 0%;
+	}
+	50% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 0%;
+	}
+}
+
+/* Progress bar */
+.progress {
+	height: 1rem;
+	background: blue;
+	position: fixed;
+	z-index: 4;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform-origin: 0 50%;
+	animation: scaleProgress auto linear, colorChange auto linear;
+	animation-timeline: scroll(root);
+}
+
+@keyframes scaleProgress {
+	0% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+@keyframes colorChange {
+	0% {
+		background-color: rgb(191, 77, 206);
+	}
+	50% {
+		background-color: rgb(58, 4, 158);
+	}
+	100% {
+		background-color: rgb(96, 75, 235);
+	}
+}
